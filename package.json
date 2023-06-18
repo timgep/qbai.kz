@@ -1,5 +1,6 @@
 {
   "name": "messenger",
+  "homepage": "https://qbai.kz/auth",
   "version": "0.1.0",
   "private": true,
   "scripts": {

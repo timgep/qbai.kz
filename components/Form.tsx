@@ -32,6 +32,11 @@ export default function Form ({children}: Props) {
             ...data,
             conversationId: conversationId
         })
+        useForm<FieldValues>({
+            defaultValues: {
+                message: ''
+            }
+        });
     }
 
     const handleUpload = (result: any) => {
