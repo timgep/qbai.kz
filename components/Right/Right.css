@@ -1,0 +1,82 @@
+
+
+/* ============= RECENT UPDATES ==============*/
+.right .recent-updates{
+    margin-top: 1rem;
+}
+
+.right .recent-updates h2{
+    margin-bottom: 0.8rem;
+}
+
+
+.right .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===================== SALES ANALYTICS ==================== */
+
+.right .sales-analytics {
+    margin-top: 2rem;
+}
+
+.right .sales-analytics h2{
+    margin-bottom: 0.8rem;
+}
+
+.right .sales-analytics .item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+
+
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+
+
+.right .sales-analytics .item .icon{
+    font-size: 24px;
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.right .sales-analytics .item.offline .icon{
+    background: var(--color-danger);
+}
+
+.right .sales-analytics .item.customers .icon{
+    background: var(--color-success);
+}
+
+.right .sales-analytics .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.right .sales-analytics .add-product h3{
+    font-weight: 600;
+}

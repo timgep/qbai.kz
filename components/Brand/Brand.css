@@ -1,0 +1,21 @@
+.asidetop__container aside{
+    height: 100vh;
+}
+
+.asidetop__container .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+  }
+  
+.asidetop__container .top .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+  
+  
+.asidetop__container .top .close{
+    display: none;
+}
+
