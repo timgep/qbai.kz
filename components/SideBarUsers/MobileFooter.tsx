@@ -27,7 +27,8 @@ const MobileFooter: React.FC<Props> = ({children}) => {
             items-center
             bg-white
             border-t-[1px]
-            z-9999
+            z-[9999]
+            lg:hidden
         ">
             {routes.map((route) => (
                 <MobileItem
