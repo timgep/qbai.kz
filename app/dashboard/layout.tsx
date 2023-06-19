@@ -13,14 +13,13 @@ export default async function Layout({children}: Props) {
     const currentUser = await getCurrentUser();
     return (
         
-        <div className="wrapper">
-            <div className="admin-panel">
-                <Left/>
-                <main>{children}</main>
-                <Right currentUser={currentUser!}/>
+        <div className="admin-panel">
+            <Left/>
+            <main>{children}</main>
+            <Right currentUser={currentUser!}/>
 
-            </div>
         </div>
+
     )
 }
 
