@@ -22,6 +22,8 @@ const MobileItem: React.FC<Props> = ({
         };
     }
 
+    console.log(active);
+
     return (
         <Link 
             href={href}

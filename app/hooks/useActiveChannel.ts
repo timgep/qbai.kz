@@ -32,7 +32,7 @@ const useActiveChannel = () => {
 
         return () => {
             if (activeChannel) {
-                pusherClient.unsubscribe('presence-messenger');
+                pusherClient.unsubscribe('presence-chat');
                 setActiveChannel(null);
             }
         }
