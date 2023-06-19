@@ -1,3 +1,4 @@
+import InsightsCard from '@/components/InsightsCard';
 import './page.css'
 
 
@@ -14,55 +15,13 @@ export default function dashboard () {
             </div>
             <div className="insights">
                 <div className="sales card">
-                    <div className="middle">
-                        <div className="left">
-                            <h3>Вся сумма</h3>
-                            <h1>₸25,024</h1>
-                        </div>
-                        <div className="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div className="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small className="text-muted">Last 24 Hours</small>
+                    <InsightsCard amount="25,024" percentage={81}/>
                 </div>
                 <div className="expenses card">
-                    <div className="middle">
-                        <div className="left">
-                            <h3>Потрачено</h3>
-                            <h1>₸14,160</h1>
-                        </div>
-                        <div className="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div className="number">
-                                <p>62%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small className="text-muted">Last 24 Hours</small>
+                    <InsightsCard amount="14,160" percentage={62}/>
                 </div>
                 <div className="income card">
-                    <div className="middle">
-                        <div className="left">
-                            <h3>Прибыль</h3>
-                            <h1>₸10,864</h1>
-                        </div>
-                        <div className="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div className="number">
-                                <p>44%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small className="text-muted">Last 24 Hours</small>
+                    <InsightsCard amount="10,864" percentage={44}/>
                 </div>
             </div>
             <div className="recent-orders">
