@@ -25,14 +25,15 @@ const MobileItem: React.FC<Props> = ({
     return (
         <Link 
             href={href}
-            onClick={onClick}
+            onClick={handleClick}
             className={`
+                cursor-pointer
                 group
                 flex
                 gap-x-3
                 text-sm
                 leading-6
-                font=semibold
+                font-semibold
                 w-full
                 justify-center
                 p-4

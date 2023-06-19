@@ -14,6 +14,7 @@ import { BiLogOut } from 'react-icons/bi'
 import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
+import { signOut } from 'next-auth/react';
 
 
 interface Props {
@@ -43,24 +44,24 @@ export default function SideBar ({children}: Props) {
                     <span><BsReceiptCutoff/></span>
                     <h3>Заказы</h3>
                 </Link>
-                <Link href="#" className={pathname.includes("/analytics") ? activeLink : ""}>
+                <Link href="/dashboard/analytics" className={pathname.includes("/analytics") ? activeLink : ""}>
                     <span><MdInsights/></span>
                     <h3>Аналитика</h3>
                 </Link>
-                <Link href="/users" className={pathname.includes("/messenger") ? activeLink : ""}>
+                <Link href="/users" className={pathname.includes("/users") ? activeLink : ""}>
                     <span><AiOutlineMail/></span>
                     <h3>Сообщения</h3>
                     <span className="message-count">26</span>
                 </Link>
-                <Link href="/shop" className={pathname.includes("/storage") ? activeLink : ""}>
+                <Link href="/shop" className={pathname.includes("/shop") ? activeLink : ""}>
                     <span><FaWarehouse/></span>
                     <h3>Склад</h3>
                 </Link>
-                <Link href="#" className={pathname.includes("/settings") ? activeLink : ""}>
+                <Link href="/dashboard/settings" className={pathname.includes("/settings") ? activeLink : ""}>
                     <span><BiCog/></span>
                     <h3>Настройки</h3>
                 </Link>
-                <Link href="#" className={pathname.includes("/logout") ? activeLink : ""}>
+                <Link href="#" onClick={() => signOut()} className={pathname.includes("/logout") ? activeLink : ""}>
                     <span><BiLogOut/></span>
                     <h3>Выйти</h3>
                 </Link>
